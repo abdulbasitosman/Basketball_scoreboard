@@ -6,4 +6,4 @@ This is in fullfilment of a solo project challenge for scrimba learning Javascri
 
 1- Tap/click Home score to increase by 1
 You can click on any of the number display to change value escept the time which is that the top.
-- send feedback to: [Send](https://x.com/_basit19)
+Send feedback to: [Send](https://x.com/_basit19)
