@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket Scoreboard</title>
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <main class="displays_board">
+        <section class="scoreboard border">
+            <div class="top">
+                <span class="home_team teams">Home</span>
+                <span class="timer border">00:00</span>
+                <span class="guest_team teams">Guest</span>
+            </div>
+
+            <h3 class="stat_label">PERIOD</h3>
+
+            <div class="bottom">
+                <button class="home_score border" id="home_score-el">00</button>
+
+                <div class="stats_section">
+                    <button class="period border" id="period-el">0</button>
+
+                    <div class="home_fouls ">
+                        <h3 class="stat_label">FOULS</h3>
+                        <button class="border foul_stat" id="foul_home">0</button>
+                    </div>
+                    <div class="guest_fouls ">
+                        <h3 class="stat_label">FOULS</h3>
+                        <button class="border foul_stat" id="foul_away">0</button>
+                    </div>
+                </div>
+
+                <button class="guest_score border" id="guest_score-el">00</button>
+            </div>
+        </section>
+
+    </main>
+    <!-- script -->
+    <script src="index.js"></script>
+</body>
+
+</html>

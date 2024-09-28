@@ -1,0 +1,159 @@
+@import url('https://fonts.cdnfonts.com/css/cursed-timer-ulil');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root {
+    /* fonts */
+    --ff-prim: "san serif", system-ui;
+    --ff-sec: 'Cursed Timer ULiL',
+        sans-serif;
+    --fs-lg: 2.5rem;
+    --fs-md: 1.4rem;
+    --fs-sm: 0.85rem;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-800: 800;
+    /* colors */
+    --clr-white: #efefef;
+    --clr-red: #8c1414;
+    --clr-grren: #12811b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    /* background-color: rgb(236, 238, 238); */
+    margin: 5em 0;
+}
+
+.displays_board {
+    display: grid;
+    row-gap: 1em;
+}
+
+.border {
+    border-radius: 3px;
+    box-shadow: 0 0 0px 2px rgb(58, 57, 57);
+    border: solid 2px rgb(79, 78, 78);
+    box-shadow: 0 0 0px 2px rgb(58, 57, 57);
+    padding: 0.2em 0.1em 0;
+    background-color: rgb(41, 41, 41);
+}
+
+.scoreboard {
+    max-width: max-content;
+    margin: auto;
+    background-color: rgb(25, 25, 25);
+    padding: 2em;
+    border: solid 2px rgb(113, 112, 112);
+    box-shadow: 0 0 0px 2px rgb(58, 57, 57);
+    position: relative;
+}
+
+.top {
+    width: 100%;
+    padding: 0.2em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.teams {
+    color: var(--clr-white);
+    font-family: var(--ff-prim);
+    font-size: 2rem;
+    font-weight: var(--fw-800);
+    text-transform: uppercase;
+}
+
+.timer {
+    color: var(--clr-red);
+    font-family: var(--ff-sec);
+    font-size: var(--fs-lg);
+}
+
+.stat_label {
+    color: var(--clr-white);
+    font-size: 1rem;
+    text-align: center;
+    margin-block: 0.2em;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    color: var(--clr-red);
+}
+
+button {
+    padding: 0.5em 1em;
+}
+
+.home_score,
+.guest_score {
+    color: var(--clr-red);
+    min-width: 120px;
+    font-family: var(--ff-sec);
+    font-size: 5rem;
+}
+
+.stats_section {
+    display: grid;
+    grid-template-areas:
+        ". grid1 ."
+        "grid2 . grid3";
+}
+
+.period {
+    grid-area: grid1;
+    min-width: 36px;
+    font-size: 2rem;
+    font-family: var(--ff-sec);
+    color: var(--clr-red);
+    text-align: center;
+    padding: 0.2em .2em 0;
+}
+
+
+.home_fouls,
+.guest_fouls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home_fouls {
+    grid-area: grid2;
+}
+
+.guest_fouls {
+    grid-area: grid3;
+}
+
+.foul_stat {
+    font-size: 2rem;
+    font-family: var(--ff-sec);
+    color: var(--clr-grren);
+    width: max-content;
+    min-width: 36px;
+    margin: auto;
+    padding: 0.2em .2em 0;
+}
+
+/* hover buttons */
+.home_score:hover,
+.period:hover,
+.guest_score:hover,
+.foul_stat:hover {
+    cursor: pointer;
+}
